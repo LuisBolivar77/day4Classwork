@@ -1,0 +1,36 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Event Name</ion-label>
+        <ion-input type="text" [value]="eventName" [(ngModel)]="eventName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Event Location</ion-label>
+        <ion-input type="text" [value]="eventLocation" [(ngModel)]="eventLocation"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Activity</ion-label>
+        <ion-input type="text" [value]="activity" [(ngModel)]="activity"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Date-Time</ion-label>
+        <ion-input type="text" [value]="dateTime" [(ngModel)]="dateTime"></ion-input>
+      </ion-item>
+      <button ion-button color="dark" round (click)="registrarEvento()">Register</button>
+    </ion-list>
+</ion-content>
